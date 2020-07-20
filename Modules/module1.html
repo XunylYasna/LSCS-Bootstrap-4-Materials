@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout and Grid - Boostrap Tutorial</title>
+
+
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <style>
+        .highlight {
+            padding: 1rem;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            background-color: #f8f9fa;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <a class="navbar-brand" href="#">LSCS Bootstrap Materials</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="/Introduction.html">Home</a>
+                </li>
+
+                <li class="nav-item dropdown active">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Modules
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item active" href="./module1.html">Layout and Grid <span
+                                class="sr-only">(current)</span></a>
+                        <a class="dropdown-item" href="./module2.html">Utilities</a>
+                        <a class="dropdown-item" href="./module3.html">Components</a>
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Exercises
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="/Exercise/exercise1.html">Exercise 1</a>
+                        <a class="dropdown-item" href="/Exercise/exercise2.html">Exercise 2</a>
+                        <a class="dropdown-item" href="/Exercise/exercise3.html">Exercise 3</a>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Challenge <span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Content -->
+    <section class="container pt-4">
+        <div class="mt-5">
+            <h1>Layout and Grid</h1>
+            <h2>Overview</h2>
+            <p>One of Bootstrap's key strength is its powerful grid system that allows you to make your website
+                responsive easily. To delve inside this, we'll discuss breakpoints, the grid system, and layout
+                utilities included in Bootstrap.</p>
+        </div>
+
+        <div class="alert alert-primary" role="alert">
+            In the further modules, we'll be relying on you to use your browser in developer tools to further see how
+            the html and css code is implemented.
+        </div>
+
+        <div class="alert alert-primary" role="alert">
+            Developer tools (inspect element) is very useful when creating web pages as it allows you to edit and view
+            html/
+            css code in your browser. It can also help you develop for different screen sizes and network speeds. Most
+            importantly,
+            it looks really cool.
+        </div>
+
+    </section>
+
+    <!-- Breakpoints -->
+    <section class="container pt-4">
+        <h2>Breakpoints</h2>
+        <p>Bootstrap uses a mobile first approach in its development. To achieve this, Bootstrap follows the following
+            media queries that you match with Bootstrap's layouting capabilities</p>
+        <ul>
+            <li>xs</li>
+            <li>sm</li>
+            <li>md</li>
+            <li>lg</li>
+            <li>xl</li>
+        </ul>
+
+        <figure class="highlight">
+            <pre><code class="language-scss" data-lang="scss">
+                <span class="c1">//Bootstrap includes the following for your media queries</span>
+                <span class="c1">// Extra small devices (portrait phones, less than 576px)</span>
+                <span class="c1">// No media query for `xs` since this is the default in Bootstrap</span>
+                
+                <span class="c1">// Small devices (landscape phones, 576px and up)</span>
+                <span class="k">@media</span> <span class="p">(</span><span class="n">min-width</span><span class="o">:</span> <span class="m">576px</span><span class="p">)</span> <span class="p">{</span> <span class="nc">...</span> <span class="p">}</span>
+                
+                <span class="c1">// Medium devices (tablets, 768px and up)</span>
+                <span class="k">@media</span> <span class="p">(</span><span class="n">min-width</span><span class="o">:</span> <span class="m">768px</span><span class="p">)</span> <span class="p">{</span> <span class="nc">...</span> <span class="p">}</span>
+                
+                <span class="c1">// Large devices (desktops, 992px and up)</span>
+                <span class="k">@media</span> <span class="p">(</span><span class="n">min-width</span><span class="o">:</span> <span class="m">992px</span><span class="p">)</span> <span class="p">{</span> <span class="nc">...</span> <span class="p">}</span>
+                
+                <span class="c1">// Extra large devices (large desktops, 1200px and up)</span>
+                <span class="k">@media</span> <span class="p">(</span><span class="n">min-width</span><span class="o">:</span> <span class="m">1200px</span><span class="p">)</span> <span class="p">{</span> <span class="nc">...</span> <span class="p">}</span></code></pre>
+        </figure>
+
+        <p>If you're not familiar with media queries, don't worry as we'll use these and show examples below.</p>
+    </section>
+
+    <!-- Grid -->
+
+    <section class="container pt-4">
+
+        <h2>Containers</h2>
+        <p>Now for the interesting part, we'll utilize Bootstrap's grid system. However, before we start we'll have to
+            use
+            containers.</p>
+
+        <p>The container class is added to elements such as sections and div for you to use the Bootstrap grid system.
+            There are three types of containers as per example below. To see the difference, please adjust your window
+            size or open your browser's developer tools.
+        </p>
+
+    </section>
+
+    <div class="container">
+        <h4>All in one</h4>
+    </div>
+    <div class="container bg-warning text-light">
+        <p>The default .container class is a responsive, fixed-width container, meaning its max-width changes at each
+            breakpoint</p>
+    </div>
+
+    <div class="container">
+        <h4>Fluid</h4>
+    </div>
+
+    <div class="container-fluid bg-warning text-light">
+        Use .container-fluid for a full width container, spanning the entire width of the viewport.
+    </div>
+
+    <div class="container">
+        <h4>Responsive</h4>
+        <p>.container-xs/sm/md/lg are used if you only want to have the container at full width until a specific
+            breakpoint</p>
+    </div>
+    <div class="container-sm bg-warning text-light">100% wide until small breakpoint</div>
+    <div class="container-md bg-warning text-light">100% wide until medium breakpoint</div>
+    <div class="container-lg bg-warning text-light">100% wide until large breakpoint</div>
+    <div class="container-xl bg-warning text-light">100% wide until extra large breakpoint</div>
+
+    <section class="container pt-4">
+        <h2>Grid System</h2>
+        <p>Bootstrap uses an ingenious twelve column system to help you build layouts for all shapes and sizes.</p>
+        <p>Basically, a container is divided into twelve columns below.</p>
+        <div class="container my-3">
+            <div class="row">
+                <div class="col bg-danger" style="border-style: solid;">Column</div>
+                <div class="col bg-danger" style="border-style: solid;">Column</div>
+                <div class="col bg-danger" style="border-style: solid;">Column</div>
+                <div class="col bg-danger" style="border-style: solid;">Column</div>
+                <div class="col bg-danger" style="border-style: solid;">Column</div>
+                <div class="col bg-danger" style="border-style: solid;">Column</div>
+                <div class="col bg-danger" style="border-style: solid;">Column</div>
+                <div class="col bg-danger" style="border-style: solid;">Column</div>
+                <div class="col bg-danger" style="border-style: solid;">Column</div>
+                <div class="col bg-danger" style="border-style: solid;">Column</div>
+                <div class="col bg-danger" style="border-style: solid;">Column</div>
+                <div class="col bg-danger" style="border-style: solid;">Column</div>
+            </div>
+        </div>
+        <p>This is personally really easy to use for you can partition your layout. You can do any combination of
+            classes as long as it <strong>adds up to 12</strong>. Note that for columns not adding up to 12 it would
+            leave an empty space.</p>
+        <div class="container">
+            <div class="row">
+                <div class="col-6 bg-info" style="border-style: solid;">adding the class col-6 to the div</div>
+                <div class="col-6 bg-info" style="border-style: solid;">adding the class col-6 to the div</div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-7 bg-secondary" style="border-style: solid;">adding the class col-7 to the div</div>
+                <div class="col-3 bg-secondary" style="border-style: solid;">col-3 to the div</div>
+                <div class="col-2 bg-secondary" style="border-style: solid;">col-2</div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-6 bg-warning" style="border-style: solid;">adding the class col-10 to the div</div>
+                <div class="col-4 bg-warning" style="border-style: solid;">col-1</div>
+                <div class="col-2 bg-warning" style="border-style: solid;">col-1</div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-5 bg-danger" style="border-style: solid;">adding the class col-5 to the div</div>
+            </div>
+        </div>
+        <p class="mt-2">To go deeper into this, we could use our previous knowledge of <strong>breakpoints</strong> to
+            customize our
+            layout depending
+            on screen size</p>
+
+
+        <div class="container">
+            <p>Here we use the col-md-3 class to specify that on medium sized screens and above the divs will have a
+                column size of 3 while on smaller screens it will have a size of 6 </p>
+            <div class="row">
+                <div class="col-6 col-md-3 bg-info" style="border-style: solid;">.col-6 .col-md-3</div>
+                <div class="col-6 col-md-3 bg-info" style="border-style: solid;">.col-6 .col-md-3</div>
+                <div class="col-6 col-md-3 bg-info" style="border-style: solid;">.col-6 .col-md-3</div>
+                <div class="col-6 col-md-3 bg-info" style="border-style: solid;">.col-6 .col-md-3</div>
+            </div>
+            <p>It is important to note that larger screens need to be more specific for Bootstrap incorporates
+                mobile first</p>
+            <div class="row">
+                <div class="col-12 col-md-6 col-xl-4 bg-warning" style="border-style: solid;">.col-12 .col-md-6
+                    .col-xl-4</div>
+                <div class="col-12 col-md-6 col-xl-4 bg-warning" style="border-style: solid;">.col-12 .col-md-6
+                    .col-xl-4</div>
+                <div class="col-12 col-md-6 col-xl-4 bg-warning" style="border-style: solid;">.col-12 .col-md-6
+                    .col-xl-4</div>
+                <div class="col-12 col-md-6 col-xl-4 bg-warning" style="border-style: solid;">.col-12 .col-md-6
+                    .col-xl-4</div>
+                <div class="col-12 col-md-6 col-xl-4 bg-warning" style="border-style: solid;">.col-12 .col-md-6
+                    .col-xl-4</div>
+                <div class="col-12 col-md-6 col-xl-4 bg-warning" style="border-style: solid;">.col-12 .col-md-6
+                    .col-xl-4</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container my-5">
+        <h3>For further reading</h3>
+        <p>If you want to learn more about the Bootstrap grid system that we haven't quite covered (alignment, gutters,
+            offsetting,nesting) check their <a href="https://getbootstrap.com/docs/4.5/layout/grid/">official
+                documentation</a>
+        </p>
+    </section>
+
+
+
+    <!-- Footer -->
+    <footer class="text-light bg-secondary py-3 pt-5">
+        <div class="container">
+            <p class="float-right">
+                <a href="#">Back to top</a>
+            </p>
+            <p>This repository is made by La Salle Computer Society, feel free to check us out on our <a
+                    href="https://dlsu-lscs.org/">website</a> or contact us through <a
+                    href="https://www.facebook.com/LaSalleComputerSociety">Facebook</a></p>
+            <p>Ready to move forward? <a href="../Exercise/exercise1.html">Go to Exercise 1</a></p>
+        </div>
+    </footer>
+
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

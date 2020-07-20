@@ -18,18 +18,22 @@
             margin-bottom: 1rem;
             background-color: #f8f9fa;
         }
+
         .nt {
             color: #2f6f9f;
         }
+
         .na {
             color: #4f9fcf;
         }
+
         .s {
             color: #d44950;
         }
     </style>
 
 </head>
+
 <body>
     <!-- Navbar -->
 
@@ -76,16 +80,19 @@
         </div>
     </nav>
 
-    <section class = "container pt-5">
-        <h1 class = "mt-3">Bootstrap Components</h1>
-        <h3 class = "pt-5">Alerts</h3>
-        <p class = "text-secondary">
-            Provide contextual feedback messages for typical user actions with the handful of available and flexible alert messages. 
+    <section class="container pt-5">
+        <h1 class="mt-3">Bootstrap Components</h1>
+        <h3 class="pt-5">Alerts</h3>
+        <p class="text-secondary">
+            Provide contextual feedback messages for typical user actions with the handful of available and flexible
+            alert messages.
         </p>
-        <div class = "jumbotron bg-white border border-light rounded-lg">
+        <div class="jumbotron bg-white border border-light rounded-lg">
             <h3>Example</h3>
             <p>
-                Alerts are available for any length of text, as well as an optional dismiss button. For proper styling, use one of the eight <strong>required</strong> contextual classes (e.g., .alert-success, alert-primary, alert-secondary). 
+                Alerts are available for any length of text, as well as an optional dismiss button. For proper styling,
+                use one of the eight <strong>required</strong> contextual classes (e.g., .alert-success, alert-primary,
+                alert-secondary).
             </p>
 
             <div class="alert alert-primary" role="alert">
@@ -93,7 +100,7 @@
             </div>
 
             <!-- sample code -->
-            <div class = "highlight">
+            <div class="highlight">
                 <pre>
                     <code class="language-html" data-lang="html">
                         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-primary"</span> <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;</span>
@@ -106,14 +113,15 @@
 
             <h3>Links</h3>
             <p>
-                For links use the .alert-link utility class to provide a matching color links within any alert. 
+                For links use the .alert-link utility class to provide a matching color links within any alert.
             </p>
             <div class="alert alert-success" role="alert">
-                This is a success alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+                This is a success alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you
+                like.
             </div>
 
-             <!-- sample code -->
-             <div class="highlight">
+            <!-- sample code -->
+            <div class="highlight">
                 <pre>
                     <code class="language-html" data-lang="html">
                         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-success"</span> <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;</span>
@@ -131,11 +139,20 @@
             </p>
             <ul>
                 <li>Be sure you’ve loaded the alert plugin, or the compiled Bootstrap JavaScript.</li>
-                <li>If you’re building our JavaScript from source, it <a href="https://getbootstrap.com/docs/4.0/getting-started/javascript/#util">requires <code class="highlighter-rouge">util.js</code></a>. The compiled version includes this.</li>
-                <li>Add a dismiss button and the <code class="highlighter-rouge">.alert-dismissible</code> class, which adds extra padding to the right of the alert and positions the <code class="highlighter-rouge">.close</code> button.</li>
-                <li>On the dismiss button, add the <code class="highlighter-rouge">data-dismiss="alert"</code> attribute, which triggers the JavaScript functionality. Be sure to use the <code class="highlighter-rouge">&lt;button&gt;</code> element with it for proper behavior across all devices.</li>
-                <li>To animate alerts when dismissing them, be sure to add the <code class="highlighter-rouge">.fade</code> and <code class="highlighter-rouge">.show</code> classes.</li>
-              </ul>
+                <li>If you’re building our JavaScript from source, it <a
+                        href="https://getbootstrap.com/docs/4.0/getting-started/javascript/#util">requires <code
+                            class="highlighter-rouge">util.js</code></a>. The compiled version includes this.</li>
+                <li>Add a dismiss button and the <code class="highlighter-rouge">.alert-dismissible</code> class, which
+                    adds extra padding to the right of the alert and positions the <code
+                        class="highlighter-rouge">.close</code> button.</li>
+                <li>On the dismiss button, add the <code class="highlighter-rouge">data-dismiss="alert"</code>
+                    attribute, which triggers the JavaScript functionality. Be sure to use the <code
+                        class="highlighter-rouge">&lt;button&gt;</code> element with it for proper behavior across all
+                    devices.</li>
+                <li>To animate alerts when dismissing them, be sure to add the <code
+                        class="highlighter-rouge">.fade</code> and <code class="highlighter-rouge">.show</code> classes.
+                </li>
+            </ul>
             <div class="alert alert-secondary alert-dismissible fade show" role="alert">
                 This is a secondary alert with the optional dismissal—check it out!
                 <button type="button" class="close" data-dismiss="alert" aria-label="Close">
@@ -143,7 +160,7 @@
                 </button>
             </div>
             <!-- sample code -->
-            <div class = "highlight">
+            <div class="highlight">
                 <pre>
                     <code class="language-html" data-lang="html">
                         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-warning alert-dismissible fade show"</span> <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;</span>
@@ -156,10 +173,10 @@
                 </pre>
             </div>
             <!-- sample code end -->
-           
-           
+
+
         </div>
-          
+
     </section>
 
     <footer class="text-light bg-secondary py-3 pt-5">
@@ -173,16 +190,16 @@
             <p>Ready to move forward? <a href="./Modules/module1.html">Go to Module 1</a></p>
         </div>
     </footer>
-      <!-- JS, Popper.js, and jQuery -->
-      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"></script>
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"></script>
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-      crossorigin="anonymous"></script>
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
