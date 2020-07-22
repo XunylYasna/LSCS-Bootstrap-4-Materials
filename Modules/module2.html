@@ -113,7 +113,7 @@
 
             <h3>Border-radius</h3>
             <p class = "text-secondary">
-                Round the borders of an element by adding different classes. 
+                Round the borders of an element by adding the class <code class = "highlighter-rouge">rounded-*</code>. 
             </p>
             <div class = "bd-example-border-utils">
                 <span class="border rounded bg-secondary"></span>
@@ -127,7 +127,69 @@
     </section>
 
     <section class = "container">
+        <h2>Colors</h2>
+        <p class = "text-secondary">
+            Bootstrap provides a handful of color utilities that also support styling links and hover. <a href="https://getbootstrap.com/docs/4.5/utilities/colors/" target="_blank">Learn More.</a>
+        </p>
+        <div class = "jumbotron bg-white border border-light rounded-lg shadow-sm">
+            <h3>Text</h3>
 
+            <p class = "text-secondary">These are the classes to modify text colors which can also be applied to links.</p>
+
+            <p class="text-primary">.text-primary</p>
+            <p class="text-secondary">.text-secondary</p>
+            <p class="text-success">.text-success</p>
+            <p class="text-danger">.text-danger</p>
+            <p class="text-warning">.text-warning</p>
+            <p class="text-info">.text-info</p>
+            <p class="text-light bg-dark">.text-light</p>
+            <p class="text-dark">.text-dark</p>
+            <p class="text-body">.text-body</p>
+            <p class="text-muted">.text-muted</p>
+            <p class="text-white bg-dark">.text-white</p>
+            <p class="text-black-50">.text-black-50</p>
+            <p class="text-white-50 bg-dark">.text-white-50</p>
+
+            <div class="highlight"><pre><code class="language-html" data-lang="html">
+                <span class="nt">&lt;p&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"text-primary"</span><span class="nt">&gt;</span>Primary link<span class="nt">&lt;/a&gt;&lt;/p&gt;</span>
+                <span class="nt">&lt;p&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"text-secondary"</span><span class="nt">&gt;</span>Secondary link<span class="nt">&lt;/a&gt;&lt;/p&gt;</span>
+                <span class="nt">&lt;p&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"text-success"</span><span class="nt">&gt;</span>Success link<span class="nt">&lt;/a&gt;&lt;/p&gt;</span>
+                <span class="nt">&lt;p&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"text-danger"</span><span class="nt">&gt;</span>Danger link<span class="nt">&lt;/a&gt;&lt;/p&gt;</span>
+                <span class="nt">&lt;p&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"text-warning"</span><span class="nt">&gt;</span>Warning link<span class="nt">&lt;/a&gt;&lt;/p&gt;</span>
+                <span class="nt">&lt;p&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"text-info"</span><span class="nt">&gt;</span>Info link<span class="nt">&lt;/a&gt;&lt;/p&gt;</span>
+                <span class="nt">&lt;p&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"text-light bg-dark"</span><span class="nt">&gt;</span>Light link<span class="nt">&lt;/a&gt;&lt;/p&gt;</span>
+                <span class="nt">&lt;p&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"text-dark"</span><span class="nt">&gt;</span>Dark link<span class="nt">&lt;/a&gt;&lt;/p&gt;</span>
+                <span class="nt">&lt;p&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"text-muted"</span><span class="nt">&gt;</span>Muted link<span class="nt">&lt;/a&gt;&lt;/p&gt;</span>
+                <span class="nt">&lt;p&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"text-white bg-dark"</span><span class="nt">&gt;</span>White link<span class="nt">&lt;/a&gt;&lt;/p&gt;</span>
+            </code></pre></div>
+        
+            <h3>Background</h3>
+            <p class = "text-secondary">
+                The color utilities can be applied in backgrounds too just apply <code class = "highlighter-rouge">bg-*</code>.
+            </p>
+            <div class="p-3 mb-2 bg-primary text-white">.bg-primary</div>
+            <div class="p-3 mb-2 bg-secondary text-white">.bg-secondary</div>
+            <div class="p-3 mb-2 bg-success text-white">.bg-success</div>
+            <div class="p-3 mb-2 bg-danger text-white">.bg-danger</div>
+            <div class="p-3 mb-2 bg-warning text-dark">.bg-warning</div>
+            <div class="p-3 mb-2 bg-info text-white">.bg-info</div>
+            <div class="p-3 mb-2 bg-light text-dark">.bg-light</div>
+            <div class="p-3 mb-2 bg-dark text-white">.bg-dark</div>
+            <div class="p-3 mb-2 bg-white text-dark">.bg-white</div>
+            <div class="p-3 mb-2 bg-transparent text-dark">.bg-transparent</div>
+
+            <div class="highlight"><pre><code class="language-html" data-lang="html">
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"p-3 mb-2 bg-primary text-white"</span><span class="nt">&gt;</span>.bg-primary<span class="nt">&lt;/div&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"p-3 mb-2 bg-secondary text-white"</span><span class="nt">&gt;</span>.bg-secondary<span class="nt">&lt;/div&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"p-3 mb-2 bg-success text-white"</span><span class="nt">&gt;</span>.bg-success<span class="nt">&lt;/div&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"p-3 mb-2 bg-danger text-white"</span><span class="nt">&gt;</span>.bg-danger<span class="nt">&lt;/div&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"p-3 mb-2 bg-warning text-dark"</span><span class="nt">&gt;</span>.bg-warning<span class="nt">&lt;/div&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"p-3 mb-2 bg-info text-white"</span><span class="nt">&gt;</span>.bg-info<span class="nt">&lt;/div&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"p-3 mb-2 bg-light text-dark"</span><span class="nt">&gt;</span>.bg-light<span class="nt">&lt;/div&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"p-3 mb-2 bg-dark text-white"</span><span class="nt">&gt;</span>.bg-dark<span class="nt">&lt;/div&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"p-3 mb-2 bg-white text-dark"</span><span class="nt">&gt;</span>.bg-white<span class="nt">&lt;/div&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"p-3 mb-2 bg-transparent text-dark"</span><span class="nt">&gt;</span>.bg-transparent<span class="nt">&lt;/div&gt;</span></code></pre></div>
+        </div>
     </section>
 
 
