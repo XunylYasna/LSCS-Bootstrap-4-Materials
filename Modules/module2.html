@@ -18,6 +18,24 @@
             margin-bottom: 1rem;
             background-color: #f8f9fa;
         }
+        .bd-example-border-utils [class^=border] {
+            display: inline-block;
+            width: 5rem;
+            height: 5rem;
+            margin: .25rem;
+            background-color: #f5f5f5;
+        }
+        .nt {
+            color: #2f6f9f;
+        }
+
+        .na {
+            color: #4f9fcf;
+        }
+
+        .s {
+            color: #d44950;
+        }
     </style>
 
 </head>
@@ -72,9 +90,45 @@
 
     <!-- Content -->
     <section class="container pt-4">
+        <h1 class = "mt-5">Bootstrap Utilities</h1>
 
+        <h2 class = "pt-5">Borders</h2>
+        <p class = "text-secondary">
+            Bootstrap border utilities provide ways to style the border and border-radius. <a href="https://getbootstrap.com/docs/4.5/utilities/borders/" target="_blank">Learn More.</a>
+        </p>
+        <div class = "jumbotron bg-white border border-light rounded-lg shadow-sm">
+            <h3>Colors</h3>
+            <p class = "text-secondary">
+                Change the borders colors using the built bootstrap theme colors (<code class = "highlighter-rouge">.primary, .secondary</code>, etc.). 
+            </p>
+            <div class = "bd-example-border-utils">
+                <span class="border border-primary"></span>
+                <span class="border border-secondary"></span>
+
+            </div>
+            <div class="highlight"><pre><code class="language-html" data-lang="html">
+                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"border border-primary"</span><span class="nt">&gt;&lt;/span&gt;</span>
+                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"border border-secondary"</span><span class="nt">&gt;&lt;/span&gt;</span>
+               </code></pre></div>
+
+            <h3>Border-radius</h3>
+            <p class = "text-secondary">
+                Round the borders of an element by adding different classes. 
+            </p>
+            <div class = "bd-example-border-utils">
+                <span class="border rounded bg-secondary"></span>
+                <span class="border rounded-circle bg-secondary"></span>
+            </div>
+            <div class="highlight"><pre><code class="language-html" data-lang="html">
+                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"border rounded"</span><span class="nt">&gt;&lt;/span&gt;</span>
+                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"border rounded-circle"</span><span class="nt">&gt;&lt;/span&gt;</span>
+            </code></pre></div>
+        </div>
     </section>
 
+    <section class = "container">
+
+    </section>
 
 
 
