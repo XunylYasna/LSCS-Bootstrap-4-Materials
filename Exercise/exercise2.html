@@ -11,15 +11,6 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
-    <style>
-        .highlight {
-            padding: 1rem;
-            margin-top: 1rem;
-            margin-bottom: 1rem;
-            background-color: #f8f9fa;
-        }
-    </style>
-
 </head>
 
 <body>
@@ -62,22 +53,168 @@
                         <a class="dropdown-item" href="./exercise3.html">Exercise 3</a>
                     </div>
                 </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Challenge <span class="sr-only">(current)</span></a>
-                </li>
             </ul>
         </div>
     </nav>
 
     <!-- Content -->
     <section class="container pt-4">
-        <div class="mt-4">
-            <h1>Exercise 1</h1>
-            <p>After learning about the Bootstrap Grid System, we challenge you to code your schedule below.</p>
-            <p>Feel free to go back to the previous module or go to the Bootstrap documentation page</p>
+        <div class="mt-5">
+            <h1>Exercise 2</h1>
+            <p>We challenge you to code your school schedule below. Use your knowledge on Bootstrap Grid system and
+                utilities.We'll give an example below but do try your best to not look at the code.</p>
+            <p>Feel free to go back to the previous module or go to the Bootstrap documentation page to get further
+                information in using utilities not discussed in the previous chapter.</p>
         </div>
     </section>
+
+    <hr>
+
+    <!-- Example Schedule -->
+    <!-- Please try not to copy paste or look hehe -->
+    <!-- Don't forget the responsiveness -->
+    <!-- But to give you a hint, it's kind of cheating but we used .invisibility to assure the schedules are aligned for time -->
+    <!-- Free space is on line 220 -->
+    <section class="container mt-5">
+        <div class="">
+            <div class="row">
+                <!-- Monday -->
+                <div class="col-12 col-sm-6 col-lg-3 mx-auto mb-5">
+                    <div class=pl-2>
+                        <h4>Monday</h4>
+                    </div>
+                    <hr>
+                    <div class="bg-primary py-3 border m-1 border-secondary text-light text-center">
+                        <p class="text-uppercase mb-n1">S20 COMPRO1</h4>
+                        <p class="text-capitalize ">Miss Stake</p>
+                        <p class="text-capitalize mb-n1">7:30AM - 9:00AM</p>
+                    </div>
+                    <div class="bg-primary py-3 border m-1 border-secondary text-light text-center invisible">
+                        <p class="text-uppercase mb-n1">X20 KASPIL1</h4>
+                        <p class="text-capitalize ">Miss Stake</p>
+                        <p class="text-capitalize mb-n1">9:15AM - 10:45AM</p>
+                    </div>
+                    <div class="bg-success py-3 m-1 border border-secondary text-light text-center">
+                        <p class="text-uppercase mb-n1">X16 KASPIL1</h4>
+                        <p class="text-capitalize ">Miss Sayl</p>
+                        <p class="text-capitalize mb-n1">11:00AM - 12:30PM</p>
+                    </div>
+                    <div class="bg-primary py-3 m-1 border border-secondary text-light text-center invisible">
+                        <p class="text-uppercase mb-n1">S20 COMPRO1</h4>
+                        <p class="text-capitalize ">Miss Stake</p>
+                        <p class="text-capitalize mb-n1">12:45PM - 2:15PM</p>
+                    </div>
+                    <div class="bg-dark py-3 m-1 border border-secondary text-light text-center">
+                        <p class="text-uppercase mb-n1">S20 CS-STAT</h4>
+                        <p class="text-capitalize ">Sir Vibe</p>
+                        <p class="text-capitalize mb-n1">2:30PM - 4:00PM</p>
+                    </div>
+                </div>
+
+                <!-- Tuesday -->
+                <div class="col-12 col-sm-6 col-lg-3 mx-auto mb-5">
+                    <div class=pl-2>
+                        <h4>Tuesday</h4>
+                    </div>
+                    <hr>
+                    <div class="bg-primary py-3 border m-1 border-secondary text-light text-center invisible">
+                        <p class="text-uppercase mb-n1">S20 COMPRO1</h4>
+                        <p class="text-capitalize ">Miss Stake</p>
+                        <p class="text-capitalize mb-n1">7:30AM - 9:00AM</p>
+                    </div>
+                    <div class="bg-warning py-3 border m-1 border-secondary text-light text-center">
+                        <p class="text-uppercase mb-n1">S21 DISCTRU</h4>
+                        <p class="text-capitalize ">Sir Kel</p>
+                        <p class="text-capitalize mb-n1">9:15AM - 10:45AM</p>
+                    </div>
+                    <div class="bg-info py-3 m-1 border border-secondary text-light text-center">
+                        <p class="text-uppercase mb-n1">S19 BASICON</h4>
+                        <p class="text-capitalize ">Miss Tress</p>
+                        <p class="text-capitalize mb-n1">11:00AM - 12:30PM</p>
+                    </div>
+                    <div class="bg-danger py-3 m-1 border border-secondary text-light text-center">
+                        <p class="text-uppercase mb-n1">S20 DISCTRU</h4>
+                        <p class="text-capitalize ">Sir Cumsison</p>
+                        <p class="text-capitalize mb-n1">12:45PM - 2:15PM</p>
+                    </div>
+                    <div class="bg-primary py-3 m-1 border border-secondary text-light text-center invisible">
+                        <p class="text-uppercase mb-n1">S20 COMPRO1</h4>
+                        <p class="text-capitalize ">Miss Stake</p>
+                        <p class="text-capitalize mb-n1">2:30PM - 4:00PM</p>
+                    </div>
+                </div>
+
+                <!-- Wednesday -->
+                <div class="col-12 col-sm-6 col-lg-3 mx-auto mb-5">
+                    <div class=pl-2>
+                        <h4>Wednesday</h4>
+                    </div>
+                    <hr>
+                    <div class="bg-primary py-3 border m-1 border-secondary text-light text-center">
+                        <p class="text-uppercase mb-n1">S20 COMPRO1</h4>
+                        <p class="text-capitalize ">Miss Stake</p>
+                        <p class="text-capitalize mb-n1">7:30AM - 9:00AM</p>
+                    </div>
+                    <div class="bg-primary py-3 border m-1 border-secondary text-light text-center invisible">
+                        <p class="text-uppercase mb-n1">X20 KASPIL1</h4>
+                        <p class="text-capitalize ">Miss Stake</p>
+                        <p class="text-capitalize mb-n1">9:15AM - 10:45AM</p>
+                    </div>
+                    <div class="bg-success py-3 m-1 border border-secondary text-light text-center">
+                        <p class="text-uppercase mb-n1">X16 KASPIL1</h4>
+                        <p class="text-capitalize ">Miss Sayl</p>
+                        <p class="text-capitalize mb-n1">11:00AM - 12:30PM</p>
+                    </div>
+                    <div class="bg-primary py-3 m-1 border border-secondary text-light text-center invisible">
+                        <p class="text-uppercase mb-n1">S20 COMPRO1</h4>
+                        <p class="text-capitalize ">Miss Stake</p>
+                        <p class="text-capitalize mb-n1">12:45PM - 2:15PM</p>
+                    </div>
+                    <div class="bg-dark py-3 m-1 border border-secondary text-light text-center">
+                        <p class="text-uppercase mb-n1">S20 CS-STAT</h4>
+                        <p class="text-capitalize ">Sir Vibe</p>
+                        <p class="text-capitalize mb-n1">2:30PM - 4:00PM</p>
+                    </div>
+                </div>
+
+                <!-- Thursdsay -->
+                <div class="col-12 col-sm-6 col-lg-3 mx-auto mb-5">
+                    <div class=pl-2>
+                        <h4>Thursdsay</h4>
+                    </div>
+                    <hr>
+                    <div class="bg-primary py-3 border m-1 border-secondary text-light text-center invisible">
+                        <p class="text-uppercase mb-n1">S20 COMPRO1</h4>
+                        <p class="text-capitalize ">Miss Stake</p>
+                        <p class="text-capitalize mb-n1">7:30AM - 9:00AM</p>
+                    </div>
+                    <div class="bg-warning py-3 border m-1 border-secondary text-light text-center">
+                        <p class="text-uppercase mb-n1">S21 DISCTRU</h4>
+                        <p class="text-capitalize ">Sir Kel</p>
+                        <p class="text-capitalize mb-n1">9:15AM - 10:45AM</p>
+                    </div>
+                    <div class="bg-info py-3 m-1 border border-secondary text-light text-center">
+                        <p class="text-uppercase mb-n1">S19 BASICON</h4>
+                        <p class="text-capitalize ">Miss Tress</p>
+                        <p class="text-capitalize mb-n1">11:00AM - 12:30PM</p>
+                    </div>
+                    <div class="bg-danger py-3 m-1 border border-secondary text-light text-center">
+                        <p class="text-uppercase mb-n1">S20 DISCTRU</h4>
+                        <p class="text-capitalize ">Sir Cumsison</p>
+                        <p class="text-capitalize mb-n1">12:45PM - 2:15PM</p>
+                    </div>
+                    <div class="bg-primary py-3 m-1 border border-secondary text-light text-center invisible">
+                        <p class="text-uppercase mb-n1">S20 COMPRO1</h4>
+                        <p class="text-capitalize ">Miss Stake</p>
+                        <p class="text-capitalize mb-n1">2:30PM - 4:00PM</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Code your schedule here -->
+
 
 
 
@@ -92,7 +229,7 @@
             <p>This repository is made by La Salle Computer Society, feel free to check us out on our <a
                     href="https://dlsu-lscs.org/">website</a> or contact us through <a
                     href="https://www.facebook.com/LaSalleComputerSociety">Facebook</a></p>
-            <p>Ready to move forward? <a href="./Modules/module1.html">Go to Module 1</a></p>
+            <p>Ready to move forward? <a href="../Modules/module3.html">Go to Module 3</a></p>
         </div>
     </footer>
 

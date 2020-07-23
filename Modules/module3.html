@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Layout and Grid - Boostrap Tutorial</title>
+    <title>Components - Boostrap Tutorial</title>
 
 
     <!-- CSS only -->
@@ -18,14 +18,24 @@
             margin-bottom: 1rem;
             background-color: #f8f9fa;
         }
+
+        .nt {
+            color: #2f6f9f;
+        }
+
+        .na {
+            color: #4f9fcf;
+        }
+
+        .s {
+            color: #d44950;
+        }
     </style>
 
 </head>
 
 <body>
-
     <!-- Navbar -->
-
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
         <a class="navbar-brand" href="#">LSCS Bootstrap Materials</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
@@ -62,24 +72,245 @@
                         <a class="dropdown-item" href="/Exercise/exercise3.html">Exercise 3</a>
                     </div>
                 </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Challenge <span class="sr-only">(current)</span></a>
-                </li>
             </ul>
         </div>
     </nav>
 
-    <!-- Content -->
+    <!-- CONTENT -->
+
     <section class="container pt-4">
+        <h1 class="mt-5">Bootstrap Components</h1>
+        <!-- ALERTS -->
+        <h2 class="pt-5">Alerts</h2>
+        <p class="text-secondary">
+            Provide contextual feedback messages for typical user actions with the handful of available and flexible
+            alert messages. <a href="https://getbootstrap.com/docs/4.0/components/alerts/" target="_blank"> Learn More.
+            </a>
+        </p>
+        <div class="jumbotron bg-white border border-light rounded-lg shadow-sm">
+            <h3>Example</h3>
+            <p>
+                Alerts are available for any length of text, with an optional dismiss button. Proper styling,
+                <strong>requires</strong> one of the eight contextual classes (e.g., .alert-success, alert-primary,
+                alert-secondary).
+            </p>
+
+            <div class="alert alert-primary" role="alert">
+                This is a primary alert—check it out!
+            </div>
+
+            <!-- sample code -->
+            <div class="highlight">
+                <pre>
+                    <code class="language-html" data-lang="html">
+                        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-primary"</span> <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;</span>
+                                This is a primary alert—check it out!
+                        <span class="nt">&lt;/div&gt;</span>
+                    </code>
+                </pre>
+            </div>
+            <!-- sample code end -->
+
+            <h3>Links</h3>
+            <p>
+                For links use the .alert-link utility class to provide a matching color links within any alert.
+            </p>
+            <div class="alert alert-success" role="alert">
+                This is a success alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you
+                like.
+            </div>
+
+            <!-- sample code -->
+            <div class="highlight">
+                <pre>
+                    <code class="language-html" data-lang="html">
+                        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-success"</span> <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;</span>
+                            This is a success alert with 
+                            <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"alert-link"</span><span class="nt">&gt;</span>an example link<span class="nt">&lt;/a&gt;</span>. 
+                            Give it a click if you like.
+                        <span class="nt">&lt;/div&gt;</span>
+                    </code>
+                </pre>
+            </div>
+            <!-- sample code end -->
+            <h3>Dismissing</h3>
+            <p>
+                Using the alert JavaScript plugin, it’s possible to dismiss any alert inline. Here’s how:
+            </p>
+            <ul>
+                <li>Be sure you’ve loaded the alert plugin, or the compiled Bootstrap JavaScript.</li>
+                <li>Add a dismiss button and the <code class="highlighter-rouge">.alert-dismissible</code> class, which
+                    adds extra padding to the right of the alert and positions the <code
+                        class="highlighter-rouge">.close</code> button.</li>
+                <li>On the dismiss button, add the <code class="highlighter-rouge">data-dismiss="alert"</code>
+                    attribute, which triggers the JavaScript functionality. Be sure to use the <code
+                        class="highlighter-rouge">&lt;button&gt;</code> element with it for proper behavior across all
+                    devices.</li>
+            </ul>
+            <div class="alert alert-secondary alert-dismissible fade show" role="alert">
+                This is a secondary alert with the optional dismissal—check it out!
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <!-- sample code -->
+            <div class="highlight">
+                <pre>
+                    <code class="language-html" data-lang="html">
+                        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-warning alert-dismissible fade show"</span> <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;</span>
+                            This is a secondary alert with the optional dismissal—check it out!
+                        <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"close"</span> <span class="na">data-dismiss=</span><span class="s">"alert"</span> <span class="na">aria-label=</span><span class="s">"Close"</span><span class="nt">&gt;</span>
+                            <span class="nt">&lt;span</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span><span class="ni">&amp;times;</span><span class="nt">&lt;/span&gt;</span>
+                        <span class="nt">&lt;/button&gt;</span>
+                        <span class="nt">&lt;/div&gt;</span>
+                    </code>
+                </pre>
+            </div>
+            <!-- sample code end -->
+
+
+        </div>
 
     </section>
 
+    <!-- CARDS -->
+    <section class="container">
+        <h2>Cards</h2>
+        <p class="text-secondary">
+            A flexible and extensive container of bootstrap. It provides options for headers and footers a wide variety
+            of content, contextual background colors, and powerful display options.
+            <a href="https://getbootstrap.com/docs/4.0/components/card/" target="_blank">Learn More.</a>
+        </p>
+        <div class="jumbotron bg-white border border-light rounded-lg shadow-sm">
+            <h3>Content Types</h3>
+            <p class="text-secondary">
+                Cards support a wide variety of content, including images, text, list groups, links, and more. Below are
+                examples of what’s supported.
+            </p>
+            <ul class="text-secondary">
+                <li>Card headers can be styled using <code class="highlighter-rouge">.card-header</code> class within
+                    the <code class="highlighter-rouge"> < h*> </code> tag </li>
+                <li>Card titles can be styled using <code class="highlighter-rouge">.card-title</code> class within the
+                    <code class="highlighter-rouge"> < h*> </code> tag </li>
+                <li><code class="highlighter-rouge">.card-img-top</code> puts an image on top of the card</li>
+                <li>Text can be added to a card using the <code class="highlighter-rouge">.card-text</code> class </li>
+                <li>The building block of a card is the <code class="highlighter-rouge">.card-body</code>. Use it
+                    whenever you need a padded section within a card.</li>
+                <li>Card footers can be styled using <code class="highlighter-rouge">.card-footer</code> class within
+                    the <code class="highlighter-rouge"> < h*> </code> tag </li>
 
+            </ul>
+            <div class="card" style="width: 18rem;">
+                <h5 class="card-header">This is the card header</h5>
+                <img class="card-img-top" src="https://dlsu-lscs.org/img/macky.png" alt="Card image cap">
 
+                <div class="card-body">
+                    <h5 class="card-title">This is the card title</h5>
+                    <p class="card-text">This is a text in the card body </p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+                <h5 class="card-footer">This is the card footer</h5>
+            </div>
+
+            <div class="highlight">
+                <pre>
+                <code class="language-html" data-lang="html">
+                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card"</span> <span class="na">style=</span><span class="s">"width: 18rem;"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"card-header"</span><span class="nt">&gt;</span>This is the card header<span class="nt">&lt;/h5&gt;</span>
+                        <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">"card-img-top"</span> <span class="na">src=</span><span class="s">"..."</span> <span class="na">alt=</span><span class="s">"Card image cap"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-body"</span><span class="nt">&gt;</span>
+                            <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"card-title"</span><span class="nt">&gt;</span>This is the card title<span class="nt">&lt;/h5&gt;</span>
+                            <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"card-text"</span><span class="nt">&gt;</span>This is the card body<span class="nt">&lt;/p&gt;</span>
+                            <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span><span class="nt">&gt;</span>Go somewhere<span class="nt">&lt;/a&gt;</span>
+                        <span class="nt">&lt;/div&gt;</span>
+                        <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"card-footer"</span><span class="nt">&gt;</span>This is the card footer<span class="nt">&lt;/h5&gt;</span>
+                    <span class="nt">&lt;/div&gt;</span>
+                </code>
+                </pre>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- NAVBAR -->
+    <section class="container">
+        <h2>Navbar</h2>
+        <p class="text-secondary">
+            A guide for bootstrap's navigation header and navbar. <a
+                href="https://getbootstrap.com/docs/4.0/components/navbar/" target="_blank">Learn More.</a>
+        </p>
+        <div class="jumbotron bg-white border border-light rounded-lg shadow-sm">
+            <h3>Example</h3>
+            <p class="text-secondary">
+                Bootstrap's navbar consists of different sub-components:
+            </p>
+            <ul>
+                <li><code class="highlighter-rouge">.navbar-brand</code> for your company, product, or project name.
+                </li>
+                <li><code class="highlighter-rouge">.navbar-nav</code> for a full-height and lightweight navigation
+                    (including support for dropdowns).</li>
+                <li><code class="highlighter-rouge">.navbar-toggler</code> for use with our collapse plugin and other
+                    navigation toggling behaviors.</li>
+                <li><code class="highlighter-rouge">.form-inline</code> for any form controls and actions.</li>
+                <li><code class="highlighter-rouge">.navbar-text</code> for adding vertically centered strings of text.
+                </li>
+                <li><code class="highlighter-rouge">.collapse.navbar-collapse</code> for grouping and hiding navbar
+                    contents by a parent breakpoint.</li>
+            </ul>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#">Disabled</a>
+                        </li>
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                </div>
+            </nav>
+        </div>
+    </section>
+
+    <!-- FURTHER READING -->
+    <section class="container mb-5 mt-5">
+        <h2>For further reading</h2>
+        <p class="text-secondary">If you want to learn more about the different bootstrap components (buttons, carousel,
+            jumbotron etc.) check out their <a href="https://getbootstrap.com/docs/4.0/getting-started/introduction/"
+                target="_blank">official documentation</a>.</p>
+    </section>
+
+    <!-- CONTENT END -->
 
 
     <!-- Footer -->
+
     <footer class="text-light bg-secondary py-3 pt-5">
         <div class="container">
             <p class="float-right">
@@ -88,10 +319,9 @@
             <p>This repository is made by La Salle Computer Society, feel free to check us out on our <a
                     href="https://dlsu-lscs.org/">website</a> or contact us through <a
                     href="https://www.facebook.com/LaSalleComputerSociety">Facebook</a></p>
-            <p>Ready to move forward? <a href="./Modules/module1.html">Go to Module 1</a></p>
+            <p>Ready to move forward? <a href="../Exercise/exercise3.html">Go to Exercise 3</a></p>
         </div>
     </footer>
-
     <!-- JS, Popper.js, and jQuery -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
