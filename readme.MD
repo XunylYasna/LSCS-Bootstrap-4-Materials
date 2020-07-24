@@ -11,5 +11,6 @@ To start you need the following:
 - Code Editor
 - Web browser
 - Internet connection
+
 Open the folder in your code editor and open the Introduction.html on your browser. We recommend using live server plugin in opening the html files. 
 
